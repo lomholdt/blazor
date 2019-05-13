@@ -1,0 +1,3 @@
+[build]
+  command = "dotnet publish -c release -o dist"
+  publish = "dist"
