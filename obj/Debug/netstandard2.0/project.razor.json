@@ -584,53 +584,6 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "Blazor.Pages.__generated__Index",
-        "AssemblyName": "Blazor",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "__generated__Index",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.__generated__Index"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Blazor.Pages.__generated__Index",
-        "AssemblyName": "Blazor",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Pages.__generated__Index",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.__generated__Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
         "Name": "Blazor.Shared.MainLayout",
         "AssemblyName": "Blazor",
         "Documentation": null,
