@@ -15,7 +15,7 @@ jobs:
   deploy:
     docker:
       - image: node:8.16.0-jessie
-    working_directory: ~/dist/release
+    working_directory: ~/dist
     steps:
       - run:
           name: Install Netlify CLI
