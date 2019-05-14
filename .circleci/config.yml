@@ -12,21 +12,24 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: ~/project
+          root: release
           # Must be relative path from root
           paths:
-            - release
+            - Blazor
   deploy:
     docker:
       - image: node:8.16.0-jessie
     working_directory: ~/project
     steps:
+      - attach_workspace:
+        # Must be absolute path or relative path from working_directory
+        at: /tmp/release
       - run:
           name: Install Netlify CLI
           command: 'npm install -g netlify-cli@latest'
       - run:
           name: Deploy to Netlify
-          command: 'netlify deploy --dir=release/Blazor/dist --prod'
+          command: 'netlify deploy --dir=/tmp/release/Blazor/dist --prod'
 workflows:
   version: 2
   build-deploy:
