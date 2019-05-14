@@ -22,14 +22,14 @@ jobs:
     working_directory: ~/project
     steps:
       - attach_workspace:
-        # Must be absolute path or relative path from working_directory
-        at: /tmp/release
+          # Must be absolute path or relative path from working_directory
+          at: /tmp/release
       - run:
           name: Install Netlify CLI
-          command: 'npm install -g netlify-cli@latest'
+          command: "npm install -g netlify-cli@latest"
       - run:
           name: Deploy to Netlify
-          command: 'netlify deploy --dir=/tmp/release/Blazor/dist --prod'
+          command: "netlify deploy --dir=/tmp/release/Blazor/dist --prod"
 workflows:
   version: 2
   build-deploy:
@@ -46,4 +46,3 @@ workflows:
           filters:
             branches:
               only: master
-
