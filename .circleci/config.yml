@@ -3,11 +3,16 @@ jobs:
   build:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:3.0.100-preview5-buster
-
     # working_directory: ~/repo
-
     steps:
       - checkout
       - run:
           name: Release
           command: dotnet publish -c release -o dist
+  deploy:
+    docker:
+      - image: node:8.16.0-jessie
+    steps:
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g netlify-cli@latest'
