@@ -1,6 +1,5 @@
-bin/**
-obj/**
-dist/**
-release/**
+**/bin
+**/obj
+/release
 
 .DS_Store
