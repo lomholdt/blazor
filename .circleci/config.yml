@@ -19,10 +19,10 @@ jobs:
     steps:
       - run:
           name: Install Netlify CLI
-          command: 'sudo npm install -g netlify-cli@latest'
+          command: 'npm install -g netlify-cli@latest'
       - run:
           name: Deploy to Netlify
-          command: 'netlify deploy'
+          command: 'netlify deploy --dir=~/dist/release'
 workflows:
   version: 2
   build-deploy:
